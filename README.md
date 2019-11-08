@@ -7,7 +7,7 @@ includes the feature to show directions in the form of Polyline between POI and 
 location and if your current location is within the 5 km of the selected event than notification
 pop up with details.
 
-* __Register your app on Google console with the same package name and insert MAP_API_kEY in
+__Register your app on Google console with the same package name and insert MAP_API_kEY in
 keys.properties file to run the application.__
 
 # Demo
