@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="dataManager"
+            type="com.app.slidingup.model.events.EventImages"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/WrapWidthVertical">
+
+        <ImageView
+            style="@style/eventsImageAdapterImageView"
+            app:eventItemImage="@{dataManager.url}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/app_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

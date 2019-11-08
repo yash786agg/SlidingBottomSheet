@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SlidingBottomSheet</string>
+
+    <string name="google_map_api_key">AIzaSyDzi5_-_9Gcdx9ozCl1PMl9ZVvf3T_cEYg</string>
+
+    <!-- Events Activity -->
+    <string name="play_service_not_installed">Play services is not installed!</string>
+    <string name="error_network_connection">Network error. Please check your Internet connection</string>
+
+    <!-- Events Fragment -->
+
+    <string name="event_title">Event Title</string>
+    <string name="error_getting_route">Request Denied. Error getting Route Info</string>
+    <string name="info_event_alert">Event Alert</string>
+    <string name="info_event_name">An Event named</string>
+    <string name="info_event_happening">is just happening at</string>
+
+    <!-- Security Permission Strings. -->
+
+    <string name="permission_denied">Permission Denied</string>
+    <string name="i_am_sure">I AM SURE</string>
+    <string name="re_try">RE-TRY</string>
+    <string name="access_fine_loc">Without this permission, you won\'t be able to get your Location. Are you sure you want to Deny this permission.?</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="permission_required_dialog_title">Permission Required</string>
+    <string name="permission_denied_dialog_info">Without accepting Location permission you can\'t proceed further</string>
+
+    <string name="need_location">Enable GPS SERVICE</string>
+    <string name="location_content">App needs your location in order to find nearby events.</string>
+    <string name="turn_on">Turn On</string>
+
+</resources>

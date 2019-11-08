@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils"/>
+
+        <variable
+            name="event"
+            type="com.app.slidingup.model.events.Event"/>
+    </data>
+
+    <LinearLayout
+        style="@style/MatchWidthHeight"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/WrapWidthHeight"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@{event.eventName.enName != null ? event.eventName.enName : event.eventName.fiName != null ? event.eventName.fiName : event.eventName.svName != null ? event.eventName.svName : event.eventName.zhName != null ? event.eventName.zhName : @string/event_title}"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_dimen_19sp"/>
+
+        <TextView
+            style="@style/WrapWidthHeight"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@{event.eventDescription.eventIntro}"
+            android:visibility="@{TextUtils.isEmpty(event.eventDescription.eventIntro) ? View.GONE : View.VISIBLE}"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_dimen_19sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            android:layout_marginTop="@dimen/dimen_10dp"/>
+
+    </LinearLayout>
+
+</layout>

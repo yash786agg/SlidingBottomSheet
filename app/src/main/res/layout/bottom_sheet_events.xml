@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils"/>
+
+        <variable
+            name="event"
+            type="com.app.slidingup.model.events.Event"/>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_380dp"
+        android:background="@android:color/white"
+        app:behavior_peekHeight="@dimen/dimen_280dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <androidx.core.widget.NestedScrollView
+            style="@style/MatchWidthHeight">
+
+            <LinearLayout
+                style="@style/MatchWidthHeight"
+                android:layout_margin="@dimen/dimen_30dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/dimen_150dp"
+                    android:layout_height="@dimen/dimen_2dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/black"/>
+
+                <include layout="@layout/layout_event"
+                    app:event="@{event}"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>
