@@ -20,7 +20,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:targetApi="m">
+        tools:targetApi="m"
+        android:usesCleartextTraffic="true">
         <activity android:name="com.app.slidingup.ui.events.activity.EventsActivity"
             android:screenOrientation="portrait">
             <intent-filter>
